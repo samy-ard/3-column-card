@@ -1,0 +1,157 @@
+@import 'https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.6667;
+	font-family: 'Lexend Deca', sans-serif;
+	background-color: hsl(0, 0%, 95%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	line-height: 1;
+	margin-top: 2.6667rem;
+	margin-bottom: 2rem;
+	font-family: 'Big Shoulders Display', cursive;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 1.6667em;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	margin: 5.8667rem auto;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col {
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 3.2rem;
+}
+
+.col:first-child {
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+}
+
+.col:last-child {
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+
+.col-icon {
+	display: block;
+}
+
+.col-heading {
+	font-size: 2.6667rem;
+	color: hsl(0, 0%, 95%);
+	text-transform: uppercase;
+}
+
+.col-text {
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn {
+	display: inline-block;
+	line-height: 1;
+	padding: 0.93333rem 1.93333rem;
+	border-radius: 3rem;
+	color: hsla(0, 0%, 0%, 0.75);
+	border: 0.13333rem solid hsla(0, 0%, 100%, 0.75);
+	transition: all 0.5s ease-in;
+	background-color: hsl(0, 0%, 95%);
+}
+
+.btn:hover, .btn:focus, .btn:active {
+	color: hsla(0, 0%, 100%, 0.75);
+	background-color: hsla(0, 0%, 0%, 0.75);
+}
+
+.btn-zest {
+	color: hsl(31, 77%, 52%);
+}
+
+.btn.btn-zest:hover, .btn.btn-zest:focus, .btn.btn-zest:active {
+	color: hsla(0, 0%, 100%, 0.75);
+	background-color: hsl(31, 77%, 52%);
+}
+
+.btn-mosque {
+	color: hsl(184, 100%, 22%);
+}
+
+.btn.btn-mosque:hover, .btn.btn-mosque:focus, .btn.btn-mosque:active {
+	color: hsla(0, 0%, 100%, 0.75);
+	background-color: hsl(184, 100%, 22%);
+}
+
+.btn-cyprus {
+	color: hsl(179, 100%, 13%);
+}
+
+.btn.btn-cyprus:hover, .btn.btn-cyprus:focus, .btn.btn-cyprus:active {
+	color: hsla(0, 0%, 100%, 0.75);
+	background-color: hsl(179, 100%, 13%);
+}
+
+.bg-zest {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.bg-mosque {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.bg-cyprus {
+	background-color: hsl(179, 100%, 13%);
+}
+
+
+@media screen and (min-width: 992px) {
+
+	.container {
+		max-width: 968px;
+	}
+
+	.col {
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+
+	.col:first-child {
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 0.5rem;
+	}
+
+	.col:last-child {
+		border-top-right-radius: 0.5rem;
+		border-bottom-left-radius: 0;
+	}
+
+	.col-text {
+		margin-bottom: 5.5333rem;
+	}
+}
